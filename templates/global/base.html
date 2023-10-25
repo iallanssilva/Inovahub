@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="{{ html_language }}">
+
+<head>
+    {% include 'inovahub/partials/head.html' %}
+    <title>{% block title %}{% endblock title %} Info</title>
+</head>
+
+<body>
+{% include 'inovahub/partials/inovahub.html' %}
+
+<main class="main-content-container">
+    {% block content %}{% endblock content %}
+</main>
+
+{% include 'inovahub/partials/contato.html' %}
+
+{% include 'inovahub/partials/footer.html' %}
+
+{% include 'inovahub/partials/modais.html' %}
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<div class="secondary-bg contact_form">
+    {% if messages %}
+        <div class=" main-content email-messages">
+            {% for message in messages %}
+                <div{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form class="main-content " method="post">
+        {% csrf_token %}
+        <h6 style="text-shadow: 1px 1px var(--white-color); font-size: 25px">Entre em contato!</h6>
+        <h4 style="text-shadow: 1px 1px var(--white-color); padding-top: 5px;">Te ajudaremos a melhorar<br> o
+            aprendizado dos seus alunos.</h4>
+        <p style="color: var(--text-primary-color); text-shadow: 1px 1px var(--white-color); padding-top: 8px;">Temos
+            uma equipe dedicada pronta para responder a todas as suas perguntas<br> e fornecer informações sobre nossos
+            serviços.</p>
+        {{ form.as_p }}
+        <button class="contact-btn" type="submit">FALE COM A GENTE!</button>
+    </form>
+</div>
