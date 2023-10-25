@@ -73,7 +73,7 @@ p {
 
 .main-bg {
     background-repeat: no-repeat;
-    background-image: url('/media/mainbg.webp');
+    background-image: url('/media/img/mainbg.webp');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -425,7 +425,7 @@ p {
 
 .detail-bg {
     background-repeat: no-repeat;
-    background-image: url('/media/detailbg.webp');
+    background-image: url('/media/img/detailbg.webp');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
